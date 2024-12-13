@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Script de Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+    <!-- Contenedor de anuncios -->
+    <div class="anuncio">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="TU_CODIGO_DE_ADSENSE"
+            data-ad-slot="TU_SLOT_ID"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly>
+        <div class="botones">
+            <button onclick="agregarValor('7')">7</button>
+            <button onclick="agregarValor('8')">8</button>
+            <button onclick="agregarValor('9')">9</button>
+            <button onclick="operar('/')">/</button>
+            <button onclick="agregarValor('4')">4</button>
+            <button onclick="agregarValor('5')">5</button>
+            <button onclick="agregarValor('6')">6</button>
+            <button onclick="operar('*')">*</button>
+            <button onclick="agregarValor('1')">1</button>
+            <button onclick="agregarValor('2')">2</button>
+            <button onclick="agregarValor('3')">3</button>
+            <button onclick="operar('-')">-</button>
+            <button onclick="agregarValor('0')">0</button>
+            <button onclick="limpiar()">C</button>
+            <button onclick="eliminar()">←</button>
+            <button onclick="operar('+')">+</button>
+            <button onclick="calcular()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
